@@ -1,0 +1,1 @@
+This repo is supposed to track my progress through computer science competitions(? I guess I can call them competitions)
