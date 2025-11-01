@@ -1,0 +1,43 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+% quotes
+\usepackage{dirtytalk}
+
+% code blocks
+\usepackage[outputdir=build, cachedir=build/_minted-notes]{minted}
+
+\title{README for GitHub repository}
+\author{Camilo de Lellis}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\section{Goal of this repository}
+This repo is supposed to track my progress through computer science competitions(? I guess I can call them competitions)
+
+\section{\LaTeX}
+I shall take notes with \LaTeX and then convert them to Markdown. To convert it into my README.md, I’ll just use the following:
+
+\begin{minted}{bash}
+pandoc notes/main.tex -o README.md --from=latex --to=gfm
+\end{minted}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
